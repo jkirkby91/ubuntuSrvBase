@@ -8,7 +8,7 @@ RUN ln -sf /bin/true /sbin/initctl
 # install some global stuff
 RUN apt-get update && \
 apt-get upgrade -y && \
-apt-get install -y software-properties-common build-essential monit nano curl wget vim language-pack-en-base gettext-base git && \
+apt-get install -y software-properties-common build-essential curl monit nano curl language-pack-en-base gettext-base git && \
 apt-get autoremove -y && \
 apt-get clean && \
 apt-get autoclean && \
