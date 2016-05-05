@@ -1,4 +1,4 @@
-FROM ubuntu:15.10
+FROM ubuntu:14.04.4
 MAINTAINER James Kirkby <jkirkby91@gmail.com>
 
 # Surpress Upstart errors/warning
