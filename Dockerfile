@@ -8,7 +8,7 @@ RUN ln -sf /bin/true /sbin/initctl
 # install some global stuff
 RUN apt-get update && \
 apt-get upgrade -y && \
-apt-get install -y software-properties-common build-essential curl monit nano curl language-pack-en-base gettext-base git && \
+apt-get install -y software-properties-common libmcrypt-dev mcrypt build-essential curl monit nano curl language-pack-en-base gettext-base git && \
 apt-get autoremove -y && \
 apt-get clean && \
 apt-get autoclean && \
