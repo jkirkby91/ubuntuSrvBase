@@ -1,6 +1,10 @@
 FROM ubuntu:14.04.4
 MAINTAINER James Kirkby <jkirkby91@gmail.com>
 
+# Set some environment vars
+ENV TERM xterm
+ENV DEBIAN_FRONTEND noninteractive
+
 # Surpress Upstart errors/warning
 RUN dpkg-divert --local --rename --add /sbin/initctl
 RUN ln -sf /bin/true /sbin/initctl
