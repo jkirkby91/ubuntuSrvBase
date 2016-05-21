@@ -12,7 +12,7 @@ RUN ln -sf /bin/true /sbin/initctl
 # install some global stuff
 RUN apt-get update && \
 apt-get upgrade -y && \
-apt-get install -y build-essential apt-transport-https ca-certificates software-properties-common nano language-pack-en-base gettext-base && \
+apt-get install -y build-essential apt-transport-https ca-certificates software-properties-common libssl-dev nano language-pack-en-base gettext-base && \
 apt-get autoremove -y && \
 apt-get clean && \
 apt-get autoclean && \
