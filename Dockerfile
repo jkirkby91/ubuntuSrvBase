@@ -34,8 +34,5 @@ COPY confs/apparmour/supervisord.conf /etc/apparmour/supervisord.conf
 # Default Memcached run command arguments
 CMD ["/usr/bin/supervisord", "-n -c /etc/supervisord.conf"]
 
-# Set the user to run service daemon
-USER daemon
-
 # set entry point
 CMD ["/bin/bash"]
