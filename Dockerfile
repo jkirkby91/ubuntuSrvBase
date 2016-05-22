@@ -9,6 +9,9 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN dpkg-divert --local --rename --add /sbin/initctl
 RUN ln -sf /bin/true /sbin/initctl
 
+# add multiverse repos
+RUN sudo apt-add-repository multiverse
+
 # install some global stuff
 RUN apt-get update && \
 apt-get upgrade -y && \
