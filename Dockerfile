@@ -14,7 +14,7 @@ RUN apt-get update && \
 apt-get upgrade -y && \
 apt-get install -y --force-yes --fix-missing build-essential apt-transport-https ca-certificates software-properties-common apparmor-utils libssl-dev nano language-pack-en-base gettext-base curl supervisor && \
 apt-add-repository multiverse  && \
-apt-get update
+apt-get update && \
 apt-get autoremove -y && \
 apt-get clean && \
 apt-get autoclean && \
